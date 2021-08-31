@@ -26,8 +26,8 @@ export default {
       this.todo.id = this.newId()
       this.todo.done = false
 
-      this.$parent.$emit('addTodo', this.todo)
-      console.log(this.todo)
+      const todo = { ...this.todo }
+      this.$emit('addTodo', todo)
 
       this.todo.text = ""
       this.todo.id = -1
