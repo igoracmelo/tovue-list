@@ -1,0 +1,33 @@
+.form {
+  /* border: 1px solid #0005; */
+  /* padding: 5rem 0; */
+  display: flex;
+  gap: 1rem;
+  /* background: #0003; */
+}
+
+.todo-text {
+  color: var(--input-fg);
+  background-color: var(--input-bg);
+  flex: 1 0 auto;
+  border-radius: .2rem;
+  /* box-shadow: 0 0 .2rem #000a; */
+  padding: 1rem 1rem;
+  // border: 2px solid #0005;
+}
+
+.todo-add {
+  color: var(--btn-fg);
+  background-color: var(--btn-bg);
+  // font-weight: bold;
+  // color: var(--todo-fg);
+  // border: 2px solid #fff1;
+  border-radius: 2px;
+  padding: .5rem 1rem;
+
+  transition: all .5s;
+
+  &:hover {
+    background-color: var(--btn-bg-focus);
+  }
+}
