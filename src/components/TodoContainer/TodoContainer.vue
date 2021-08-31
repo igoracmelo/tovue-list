@@ -1,5 +1,5 @@
 <template>
-  <div class="todo-container" @newTodo="addTodo(todo)">
+  <div class="todo-container">
     <TodoForm @add-todo="addTodo" />
     <div class="todos">
       <TodoItem 
