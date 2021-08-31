@@ -8,9 +8,6 @@
 
 
 <script>
-import App from '../App/App.vue'
-import TodoContainer from '../TodoContainer/TodoContainer.vue'
-
 export default {
   data() {
     return {
