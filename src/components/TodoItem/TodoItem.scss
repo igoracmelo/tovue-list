@@ -11,11 +11,10 @@
   border-radius: 5px;
   transition: all .5s;
 
-  &:hover {
+  &.hover, &:hover {
     background-color: var(--todo-bg-focus);
     box-shadow: 0 0 5px rgba(0, 132, 255, 0.521);
   }
-
   
   &.done {
     opacity: 0.5;
@@ -23,8 +22,6 @@
 
   &.deleted {
     opacity: 0;
-    // visibility: hidden;
-    // display: none;
   }
 }
 

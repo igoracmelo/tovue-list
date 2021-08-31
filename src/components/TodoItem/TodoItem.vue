@@ -6,7 +6,7 @@
       v-model="done" 
       @change="onCheck($event)"
     >
-    <input type="text" class="todo-text" :value="todo">
+    <input type="text" class="todo-text" :value="todo" @focus="onFocus" @blur="onBlur">
     <button 
       class="todo-delete focus-outline"
       @click="onDelete($event)">X</button>
@@ -38,7 +38,18 @@ export default {
       let currentTodo = e.target.parentNode
       currentTodo.classList.add("deleted")
       setTimeout(() => currentTodo.remove(), 500)
+    },
+
+    onFocus(e) {
+      let currentTodo = e.target.parentNode
+      currentTodo.classList.add("hover")
+    },
+
+    onBlur(e) {
+      let currentTodo = e.target.parentNode
+      currentTodo.classList.remove("hover")
     }
+
   }
 }
 </script>
