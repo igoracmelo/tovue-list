@@ -1,6 +1,6 @@
 <template>
   <div class="todo-container" @newTodo="addTodo(todo)">
-    <TodoForm />
+    <TodoForm @add-todo="addTodo" />
     <div class="todos">
       <TodoItem 
         v-for="item in todoItems" 
@@ -35,7 +35,7 @@ export default {
   methods: {
     addTodo(todo) {
       this.todoItems.push(todo)
-      console.log(this.todoItems)
+      console.log(todo)
     }
   }
 }
