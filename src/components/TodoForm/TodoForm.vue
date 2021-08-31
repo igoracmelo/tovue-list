@@ -9,6 +9,7 @@
 
 <script>
 import App from '../App/App.vue'
+import TodoContainer from '../TodoContainer/TodoContainer.vue'
 
 export default {
   data() {
@@ -20,12 +21,20 @@ export default {
   methods: {
     handleSubmit() {
       if (this.todo.text.match(/^\s*$/)) 
-          return
-      this.todo.id = parseInt(Math.random() * 10000000000)
+        return
+      
+      this.todo.id = this.newId()
+      this.todo.done = false
+
+      this.$parent.$emit('addTodo', this.todo)
       console.log(this.todo)
 
       this.todo.text = ""
       this.todo.id = -1
+    },
+
+    newId() {
+      return parseInt(Math.random() * 10000000000)
     }
   }
 }

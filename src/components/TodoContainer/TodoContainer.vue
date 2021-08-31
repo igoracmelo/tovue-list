@@ -1,5 +1,5 @@
 <template>
-  <div class="todo-container">
+  <div class="todo-container" @newTodo="addTodo(todo)">
     <TodoForm />
     <div class="todos">
       <TodoItem 
@@ -29,6 +29,13 @@ export default {
         { id: 3, text: "and also this" },
         { id: 4, text: "unfortunately also this" },
       ]
+    }
+  },
+
+  methods: {
+    addTodo(todo) {
+      this.todoItems.push(todo)
+      console.log(this.todoItems)
     }
   }
 }
