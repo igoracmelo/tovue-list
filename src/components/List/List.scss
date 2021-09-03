@@ -1,9 +1,9 @@
 .container {
-  padding: 4rem 0;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  min-height: 30rem;
+  background-color: var(--list-bg);
 }
 
 .title {
