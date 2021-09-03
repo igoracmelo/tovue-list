@@ -14,7 +14,6 @@ export default {
       this.todo.done = false
 
       const todo = { ...this.todo }
-      console.log(todo)
       this.$emit('addTodo', todo)
 
       this.todo.text = ""
