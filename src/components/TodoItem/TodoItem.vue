@@ -5,6 +5,7 @@
       class="todo-done focus-outline"
       v-model="item.done" 
       @change="onCheck($event)"
+      tabindex="-1"
     >
     <input 
       type="text" 
@@ -12,10 +13,12 @@
       :value="item.text" 
       @focus="onFocus" 
       @blur="onBlur"
+      tabindex="1"
     >
     <button 
       class="todo-delete focus-outline"
-      @click="onDelete($event)">X</button>
+      tabindex="-1"
+    >X</button>
   </div>
 </template>
 

@@ -1,6 +1,11 @@
 <template>
   <form class="form" @submit.prevent="handleSubmit">
-    <input type="text" class="todo-text" v-model="todo.text">
+    <input 
+      type="text" 
+      class="todo-text" 
+      v-model="todo.text" 
+      tabindex="1"
+    >
     <button type="submit" class="todo-add">Add</button>
   </form>
 </template>
