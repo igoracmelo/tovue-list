@@ -21,7 +21,7 @@ export default {
     onDelete(e) {
       let currentTodo = e.target.parentNode
       currentTodo.classList.add("deleted")
-      setTimeout(() => currentTodo.remove(), 500)
+      setTimeout(() => currentTodo.remove(), 300)
     },
     
     onFocus(e) {
