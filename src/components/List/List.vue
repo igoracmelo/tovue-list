@@ -5,7 +5,7 @@
       <TodoItem 
         v-for="item in items" 
         :key="item.id" 
-        :todo="item.text"
+        :item="item"
       />
     </div>
   </div>

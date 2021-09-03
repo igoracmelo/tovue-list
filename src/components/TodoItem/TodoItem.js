@@ -1,18 +1,16 @@
 export default {
   props: {
-    todo: String,
-  },
-
-  data() {
-    return {
-      done: false
-    }
+    item: {
+      id: Number,
+      text: String,
+      done: Boolean,
+    },
   },
 
   methods: {
     onCheck(e) {
       let currentTodo = e.target.parentNode
-      if (this.done)
+      if (this.item.done)
         currentTodo.classList.add("done")
       else
         currentTodo.classList.remove("done")
