@@ -25,6 +25,10 @@
   }
 }
 
+.todo-done {
+  filter: hue-rotate(-40deg);
+}
+
 .todo-text {
   color: var(--todo-fg);
   padding: 0 5px;
