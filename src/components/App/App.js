@@ -33,4 +33,19 @@ export default {
       this.items.push(todo)
     },
   },
+
+  mounted() {
+    let itemsString = localStorage.getItem('items')
+    if (itemsString)
+      this.items = JSON.parse(itemsString)
+  },
+
+  watch: {
+    items: {
+      handler() {
+        localStorage.setItem('items', JSON.stringify(this.items))
+      },
+      deep: true,
+    }
+  }
 }
