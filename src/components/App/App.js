@@ -19,12 +19,16 @@ export default {
   },
 
   computed: {
+    allItems() {
+      return this.items.filter((i) => !i.deleted)
+    },
+
     todoItems() {
-      return this.items.filter((i) => !i.done)
+      return this.allItems.filter((i) => !i.done && !i.deleted)
     },
 
     doneItems() {
-      return this.items.filter((i) => i.done)
+      return this.allItems.filter((i) => i.done && !i.deleted)
     }
   },
 
@@ -41,9 +45,9 @@ export default {
   },
 
   watch: {
-    items: {
+    allItems: {
       handler() {
-        localStorage.setItem('items', JSON.stringify(this.items))
+        localStorage.setItem('items', JSON.stringify(this.allItems))
       },
       deep: true,
     }
