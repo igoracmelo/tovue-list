@@ -18,6 +18,7 @@
     <button 
       class="todo-delete focus-outline"
       tabindex="-1"
+      @click="this.$emit('delete', item)"
     >X</button>
   </div>
 </template>
