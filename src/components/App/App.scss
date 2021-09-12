@@ -47,4 +47,8 @@ button, input[type=checkbox] {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  > * {
+    filter: drop-shadow(0 2px 3px var(--shadow-clr));
+  }
 }
