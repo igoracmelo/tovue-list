@@ -1,0 +1,20 @@
+#app.light {
+  --todoapp-fg: #050505;
+  --todoapp-bg: #fafafa;
+  
+  --shadow-clr: #0002;
+  
+  --list-bg: #fff;
+
+  --input-fg: var(--todoapp-fg);
+  --input-bg: var(--list-bg);
+  --input-bg-focus: #f4faff;
+  
+  --btn-fg: #000;
+  --btn-bg: #cef4ff;
+  --btn-bg-focus: #d0eaff;
+
+  // --todo-bg: #fff;
+  // --todo-fg: #fafafa;
+  // --todo-del: #fafafa;
+}
