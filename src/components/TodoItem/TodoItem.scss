@@ -13,7 +13,7 @@
 
   &.hover, &:hover {
     background-color: var(--input-bg-focus);
-    box-shadow: 0 0 5px rgba(0, 132, 255, 0.521);
+    box-shadow: 0 0 5px var(--todo-outline);
   }
   
   &.done {
