@@ -1,23 +1,7 @@
+@import './themes/index.scss';
+
 :root {
   font-size: 62.5%;
-
-  --bg: rgb(14, 14, 14);
-  --todoapp-fg: #fafafa;
-  --todoapp-bg: #333;
-
-  --list-bg: #555;
-
-  --input-fg: #fafafa;
-  --input-bg: #666;
-  --input-bg-focus: rgb(63, 71, 78);
-  
-  --btn-fg: #000;
-  --btn-bg: rgb(183, 206, 224);
-  --btn-bg-focus: rgb(208, 233, 253);
-
-  --todo-bg: #666;
-  --todo-fg: #fafafa;
-  --todo-del: #fafafa;
 }
 
 * {
@@ -41,23 +25,23 @@ button, input[type=checkbox] {
   cursor: pointer;
 }
 
-body {
-  max-width: 100vw;
-  min-height: 100vh;
-  background-color: var(--todoapp-bg);
-}
-
 #app {
   font-family: Roboto, Avenir, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  width: 50rem;
-  max-width: 100vw;
-
-  background-color: var(--todoapp-bg);
+  
   padding: 1.5rem;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--todoapp-bg);
+}
+
+
+.app-container {
+  width: 50rem;
+  max-width: 100%;
+
   margin: 0 auto;
   
   display: flex;
