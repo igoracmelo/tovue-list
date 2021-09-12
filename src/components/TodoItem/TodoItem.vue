@@ -10,7 +10,7 @@
     <input 
       type="text" 
       class="todo-text" 
-      :value="item.text" 
+      v-model="item.text" 
       @focus="onFocus" 
       @blur="onBlur"
       tabindex="1"
