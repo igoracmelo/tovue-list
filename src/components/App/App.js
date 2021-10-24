@@ -1,4 +1,5 @@
 import TodoForm from '../TodoForm/TodoForm.vue'
+import ThemeSelector from '../ThemeSelector/ThemeSelector.vue'
 import List from '../List/List.vue'
 
 export default {
@@ -6,6 +7,7 @@ export default {
   components: {
     TodoForm,
     List,
+    ThemeSelector
   },
 
   data() {

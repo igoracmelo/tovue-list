@@ -1,5 +1,6 @@
 <template>
   <div class="app-container">
+    <ThemeSelector />
     <TodoForm @add-todo="addTodo" />
     <List 
       title="To-do" 
