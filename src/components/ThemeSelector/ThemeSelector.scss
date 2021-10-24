@@ -1,8 +1,7 @@
 select {
   padding: 1rem;
   text-transform: capitalize;
-  border-radius: .2rem;
-  background-color: var(--input-bg);
+  border-radius: var(--roundness);
   transition: all .3s;
 
   &:hover {

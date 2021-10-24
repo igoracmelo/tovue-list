@@ -8,7 +8,7 @@
   width: 100%;
   padding: 1rem 1rem;
   
-  border-radius: 5px;
+  border-radius: var(--roundness);
   transition: all .3s;
 
   &.hover, &:hover {
@@ -33,7 +33,7 @@
   color: var(--todo-fg);
   padding: 0 5px;
   border: 1px solid #0000;
-  border-radius: 2px;
+  border-radius: var(--roundness);
   flex: 1 0 auto;
   width: 0;
 }
