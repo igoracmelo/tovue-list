@@ -10,10 +10,7 @@ export default {
   methods: {
     onCheck(e) {
       let currentTodo = e.target.parentNode
-      if (this.item.done)
-        currentTodo.classList.add("done")
-      else
-        currentTodo.classList.remove("done")
+			currentTodo.classList.toggle("done")
     },
     
     onDelete(e) {
