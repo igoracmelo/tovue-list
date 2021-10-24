@@ -2,7 +2,7 @@
   --roundness: 4px;
 
   --todoapp-fg: #050505;
-  --todoapp-bg: #fafafa;
+  --todoapp-bg: #f0f0f0;
   
   --shadow-clr: #0002;
   
@@ -10,14 +10,17 @@
 
   --input-fg: var(--todoapp-fg);
   --input-bg: var(--list-bg);
-  --input-bg-focus: #f4faff;
+  --input-bg-focus: #fdf9d1;
   
   --btn-fg: #000;
-  --btn-bg: #cef4ff;
-  --btn-bg-focus: #d0eaff;
-  --todo-outline: #0084ff85;
+  --btn-bg: #fffd90;
+  --btn-bg-focus: rgb(255, 254, 199);
 
-  --todo-bg: #f5f5f5;
-  // --todo-fg: #fafafa;
-  // --todo-del: #fafafa;
+  --todo-fg: black;
+  --todo-bg: #f0f0f0;
+
+  --todo-del: black;
+  --todo-outline: #ff3;
+
+  --theme-selector-bg: #91c1ff;
 }
