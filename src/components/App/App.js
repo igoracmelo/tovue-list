@@ -7,7 +7,7 @@ export default {
   components: {
     TodoForm,
     List,
-		ThemeSelector
+    ThemeSelector
   },
 
   data() {
