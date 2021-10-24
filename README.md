@@ -1,7 +1,7 @@
 # ToVue List
 ~~Yet another~~ to-do list made with Vue.js Framework for studying purposes.
 
-### **[Try it here!](tovue-list.vercel.app)**
+### **[Try it here!](http://tovue-list.vercel.app)**
 
 
 ## Project setup
