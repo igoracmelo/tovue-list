@@ -12,3 +12,4 @@
 
 
 <script src="./ThemeSelector.js"></script>
+<style scoped lang="scss" src="./ThemeSelector.scss"></style>

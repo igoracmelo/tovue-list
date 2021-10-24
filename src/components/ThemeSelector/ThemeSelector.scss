@@ -1,0 +1,15 @@
+select {
+	padding: 1rem;
+	text-transform: capitalize;
+	border-radius: .2rem;
+	background-color: var(--input-bg);
+	transition: all .3s;
+
+	&:hover {
+		background-color: var(--todo-outline);
+	}
+}
+
+option {
+	background-color: var(--input-bg);
+}
