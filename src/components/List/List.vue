@@ -1,6 +1,12 @@
 <template>
   <div class="container">
     <h2 class="title">{{ title }}</h2>
+    <p 
+      class="placeholder"
+      v-if="!items.length && onEmptyMsg"
+    >
+      {{ onEmptyMsg }}
+    </p>
     <div class="items">
       <TodoItem 
         v-for="item in items" 

@@ -7,6 +7,7 @@ export default {
 
   props: {
     title: String,
-    items: Array
-  }
+    items: Array,
+    onEmptyMsg: String
+  },
 }
