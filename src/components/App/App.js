@@ -12,11 +12,7 @@ export default {
 
   data() {
     return {
-      items: [
-        { id: 1, text: "i need to do this", done: false },
-        { id: 2, text: "and this", done: false },
-        { id: 10, text: "this is DONE", done: true },
-      ]
+      items: []
     }
   },
 
