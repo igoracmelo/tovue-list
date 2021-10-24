@@ -14,6 +14,7 @@
   &.hover, &:hover {
     background-color: var(--input-bg-focus);
     box-shadow: 0 0 5px var(--todo-outline);
+    font-weight: bold;
   }
   
   &.done {
@@ -34,6 +35,7 @@
   padding: 0 5px;
   border: 1px solid #0000;
   border-radius: var(--roundness);
+  font-weight: inherit;
   flex: 1 0 auto;
   width: 0;
 }
